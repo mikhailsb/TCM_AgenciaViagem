@@ -8,6 +8,8 @@ namespace TCM_AgenciaViagem.Models
     public class Funcionario
     {
         public ushort IdFuncionario { get; set; }
+
+
         public string NomeFuncioario { get; set; }
         public string Login { get; set; }
         public string SenhaFuncionario { get; set; }
