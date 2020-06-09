@@ -2,11 +2,12 @@
 
 @{
     ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_SegundoLayout.cshtml";
 }
 
 <h2>Cadastro de Fúncionário</h2>
 
-@using (Html.BeginForm("Index","Funcionario", FormMethod.Post))
+@using (Html.BeginForm("Index", "Funcionario", FormMethod.Post))
 {
     @Html.ValidationSummary(true)
 

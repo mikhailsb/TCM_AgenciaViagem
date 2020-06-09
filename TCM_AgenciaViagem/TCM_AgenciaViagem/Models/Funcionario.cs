@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 
@@ -9,9 +10,15 @@ namespace TCM_AgenciaViagem.Models
     {
         public ushort IdFuncionario { get; set; }
 
-
+        [Required(ErrorMessage = "Nome do funcionário é o brigatório.")]
         public string NomeFuncioario { get; set; }
+
+        [Required(ErrorMessage = "Login do funcionário é obrigatório.")]
+        [StringLength(50, MinimumLength=5, ErrorMessage ="O campo deve conter mais de 5 caracteres.")]
         public string Login { get; set; }
+
+        [Required(ErrorMessage = "Senha é um campo obrigatório.")]
+        [StringLength(16, MinimumLength = 8, ErrorMessage ="A senha deve ter de 8 a 16 caracteres.")]
         public string SenhaFuncionario { get; set; }
 
         public void CadastrarFuncionario() 

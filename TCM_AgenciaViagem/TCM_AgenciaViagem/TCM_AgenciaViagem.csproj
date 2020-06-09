@@ -173,6 +173,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Funcionario\Index.cshtml" />
+    <Content Include="Views\Shared\_SegundoLayout.cshtml" />
     <Content Include="Views\Funcionario\Resultado.cshtml" />
   </ItemGroup>
   <ItemGroup>
